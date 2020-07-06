@@ -3,6 +3,9 @@ package com.demo.inventory.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.UUID;
+
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.Entity;
@@ -17,6 +20,8 @@ import javax.persistence.Table;
 
 @Table(name = "INVENTORY")
 @Entity
+@Getter
+@Setter
 public class Item   {
 
   @Id
@@ -33,53 +38,14 @@ public class Item   {
     return this;
   }
 
-  /**
-   * Get sku
-   * @return sku
-  **/
-  public int getSku() {
-    return sku;
-  }
-
-  public void setSku(int sku) {
-    this.sku = sku;
-  }
-
   public Item name(String name) {
     this.name = name;
     return this;
   }
 
-  /**
-   * Get name
-   * @return name
-  **/
-  public String getName() {
-
-    return name;
-  }
-
-  public void setName(String name) {
-
-    this.name = name;
-  }
-
   public Item count(Integer count) {
     this.count = count;
     return this;
-  }
-
-  /**
-   * Get count
-   * @return count
-  **/
-  public int getCount() {
-
-    return count;
-  }
-
-  public void setCount(int count) {
-    this.count = count;
   }
 
 
