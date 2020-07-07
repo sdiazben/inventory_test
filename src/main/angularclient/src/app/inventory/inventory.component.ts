@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from '../model/item';
+import { InventoryService } from '../service/inventory.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-inventory',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventoryComponent implements OnInit {
 
-  constructor() { }
+  inventory: Observable<Item[]>;
+  constructor(private inventoryService: InventoryService) { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit() {
+     console.log("hol");
+     this.inventory = this.inventoryService.getInventory();
+   }
 }
+

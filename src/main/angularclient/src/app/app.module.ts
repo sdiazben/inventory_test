@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InventoryComponent } from './inventory/inventory/inventory.component';
-import { InventoryService } from './service/item-service.service';
+import { FormsModule } from '@angular/forms';
+import { InventoryComponent } from './inventory/inventory.component';
+import { InventoryService } from './service/inventory.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +15,10 @@ import { InventoryService } from './service/item-service.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [InventoryService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

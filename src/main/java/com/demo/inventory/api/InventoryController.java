@@ -20,6 +20,7 @@ import java.util.concurrent.ExecutionException;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2020-07-02T21:11:49.357Z")
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class InventoryController {
 
     @Autowired
