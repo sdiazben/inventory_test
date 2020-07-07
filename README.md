@@ -12,6 +12,7 @@
 
   - Open terminal and go to directory inventory_test/angularfrontend  
   - Run command  
+  
     <pre><code>ng build --prod</code></pre>
 
 
@@ -19,6 +20,7 @@
 
   - Open terminal and go back to directory inventory_test  
   - Run command:  
+  
     <pre><code>mvn clean install</code></pre>
 
 3. Generates springbackend/target/springbackend-0.0.1-SNAPSHOT.jar then it can be deploy using deploy instruction
