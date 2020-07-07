@@ -10,8 +10,8 @@
 
 1. Building the frontend:  
 
-  a. Open terminal and go to directory inventory_test/angularfrontend  
-  b. Run command  
+  - Open terminal and go to directory inventory_test/angularfrontend  
+  - Run command  
   <pre><code>ng build --prod</code></pre>
 
 
