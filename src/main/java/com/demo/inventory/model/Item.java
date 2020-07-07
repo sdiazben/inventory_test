@@ -8,10 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.validation.annotation.Validated;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 /**
@@ -25,13 +22,12 @@ import javax.persistence.Table;
 public class Item   {
 
   @Id
-  @GeneratedValue
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private int sku;
 
   private String name;
 
   private int count;
-
 
   public Item sku(int sku) {
     this.sku = sku;
