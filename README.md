@@ -1,6 +1,22 @@
-# inventory_test
+# Inventory test
+## By: Sara Diaz
 
 To deploy: 
 
 1. Open terminal and in inventory_test directory run: 
 <pre><code>java -jar springbackend/target/springbackend-0.0.1-SNAPSHOT.jar</code></pre>
+
+To rebuild the jar: 
+
+1. Building the frontend: 
+a. Open terminal and go to directory inventory_test/angularfrontend
+b. Run command 
+<pre>ng build --prod<code>
+
+
+2. Coupling with the backend: 
+a. Open terminal and go back to directory inventory_test
+b. Run command: 
+<pre>mvn clean install<code>
+
+3. Generates springbackend/target/springbackend-0.0.1-SNAPSHOT.jar then it can be deploy using the previous instructions
